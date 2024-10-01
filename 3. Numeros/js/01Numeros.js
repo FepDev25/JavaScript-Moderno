@@ -1,60 +1,16 @@
-/****************************** Strings *******************************/
-
-const producto = "Monitor de 20 pulgadas";
-const productoEspacios = "                              Celular con espacios                  ";
-const producto2 = String("Celular Samsung");
-const producto3 = new String("Tablet Samsung");
-const producto4 = "Monitor de 40 \"pulgadas\"";
-
-console.log("Producto:", producto);
-console.log("Producto2:", producto2);
-console.log("Producto3:", producto3);
-console.log("Producto4:", producto4);
-
-console.log("Tipo de producto:", typeof producto);
-console.log("Tipo de producto2:", typeof producto2);
-console.log("Tipo de producto3:", typeof producto3);
-
-console.log("Tamaño de la cadena:", producto.length);
-console.log("Índice de 'pulgad':", producto.indexOf("pulgad"));
-console.log("Contiene 'pulgad':", producto.includes("pulgad"));
-console.log("Contiene 'xoxo':", producto.includes("xoxo"));
-console.log("Todo a minúsculas:", producto.toLowerCase());
-console.log("Todo a mayúsculas:", producto.toUpperCase());
-console.log("Empieza con 'M':", producto.startsWith("M"));
-console.log("Termina con 'pulgadas':", producto.endsWith("pulgadas"));
-console.log("Porción de la cadena (slice):", producto.slice(0, 7));
-console.log("Porción de la cadena (substring):", producto.substring(0, 7));
-console.log("Reemplazo '20' con '21':", producto.replace("20", "21"));
-console.log("Repetir cadena dos veces:", producto.repeat(2));
-console.log("Elimina espacios:", productoEspacios.trim());
-console.log("Carácter en índice 0:", producto.charAt(0));
-console.log("Dividir en array:", producto.split(" "));
-
-const producto5 = "Monitor de 24 pulgadas";
-const precio = "300 USD";
-console.log("Concatenación:", producto5.concat(" ", precio, "."));
-const descripcion = `${producto5} cuesta ${precio}.`;
-console.log("Descripción:", descripcion);
-
-const nombre = "Felipe Peralta";
-const email = "felipe@gmail.com";
-const concatenado = nombre + " " + email;
-console.log(concatenado)
-
-const concatenado2 = `${nombre} ${email}`;
-console.log(concatenado2)
-// console.clear();
-
 /****************************** Números *******************************/
 
 const num1 = 100;
 const num2 = 200;
 const num3 = 200.55;
+const num4 = .78;
+const num5 = -45;
 
 console.log("Número 1:", num1);
 console.log("Número 2:", num2);
 console.log("Número 3:", num3);
+console.log("Número 4:", num4);
+console.log("Número 5:", num5);
 
 console.log("Suma:", num1 + num2);
 console.log("Resta:", num1 - num2);
@@ -73,7 +29,7 @@ const redondeo3 = Math.floor(4.01); // Redondear hacia abajo
 const raiz = Math.sqrt(144); // Raiz cuadrada
 const minimo = Math.min(9,10,10,11,9,1,4,5); // Numero minimo de una lista
 const maximo = Math.max(9,10,10,11,9,1,4,5); // Numero maximo de una lista
-const numeroRandom2 = Math.floor(Math.random() * 10);
+const numeroRandom2 = Math.floor(Math.random() * 100);
 const potencia = Math.pow(2, 3); // Eleva 2 a la potencia 3 (2^3 = 8)
 const absoluto = Math.abs(-5.76); // Valor absoluto, convierte negativo a positivo
 const logaritmo = Math.log(10); // Logaritmo natural de 10
@@ -94,7 +50,7 @@ console.log("Redondeo hacia abajo (floor):", redondeo3);
 console.log("Raíz cuadrada:", raiz);
 console.log("Número mínimo:", minimo);
 console.log("Número máximo:", maximo);
-console.log("Número aleatorio (0-9):", numeroRandom2);
+console.log("Número aleatorio (0-100):", numeroRandom2);
 console.log("Potencia (2^3):", potencia);
 console.log("Valor absoluto:", absoluto);
 console.log("Logaritmo natural de 10:", logaritmo);
@@ -129,13 +85,18 @@ console.log(puntaje);
 puntaje += 78;
 console.log(puntaje);
 
-/****************************** Booleans *******************************/
+// Convertir Strings a numeros
 
-const bool1 = true;
-const bool2 = false;
-const bool3 = new Boolean(true)
+const numeroString = "100";
+const numeroString2 = "100.32";
+const numeroEntero = 100;
+console.log(typeof numeroString);
+console.log(typeof numeroEntero);
 
-console.log("Booleanos: ");
-console.log(bool1);
-console.log(bool2);
-console.log(bool3);
+const numeroTransformado = Number.parseInt(numeroString);
+const numeroTransformado2 = Number.parseFloat(numeroString2);
+
+console.log(numeroTransformado);
+console.log(typeof numeroTransformado);
+console.log(numeroTransformado2);
+console.log(typeof numeroTransformado2);

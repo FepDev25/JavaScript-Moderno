@@ -1,6 +1,6 @@
 // Variables
 
-var producto = 'Audifonos Gamer'; // Iniciar varianle con valor
+var producto = 'Audifonos Gamer'; // Iniciar variable con valor
 var disponible; // Iniciar variable sin valor
 
 producto = true; // Reasignando el valor de la variable. Tipado dinamico
